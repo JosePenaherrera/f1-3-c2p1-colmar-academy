@@ -1,0 +1,475 @@
+/* =================================
+  Universal Styles
+==================================== */
+
+/* Base Styles */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* Mobile and Tablet */
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+
+	html {
+	  font-size: 14px;
+	}
+}
+
+body {
+	line-height: 1.5;
+	color: #2a3132;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+
+h3,
+h4 {
+	margin: 0;
+	padding-bottom: 1rem;
+	color: #4abdac;
+}
+
+p {
+	margin: 0;
+	padding-bottom: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =================================
+  Main Styles
+==================================== */
+
+/* Header Styles */
+
+header {
+  height: 37rem;
+  background-image: linear-gradient(rgba(74, 189, 172, 0.85), rgba(74, 189, 172, 0.75)),
+  url(../images/banner.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header .mobile {
+	display: none;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+header img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+header .logo {
+  flex: 1;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 1.333rem;
+  color: #fff;
+}
+
+.logo span {
+  font-weight: normal;
+  color: #f7b733;
+}
+
+/* Navigation Styles */
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  padding-left: 3rem;
+}
+
+nav a:hover {
+  color: #f7b733;
+}
+
+.content .button {
+  display: block;
+  width: 90px;
+  background-color: #f7b733;
+  border-radius: 20px;
+  padding: .5rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+nav .button:hover {
+  background-color: #eda309;
+	color: #fff;
+}
+
+/* Only Mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	header {
+	  height: 20rem;
+	  background-position: center;
+	}
+
+	header .desktop {
+		display: none;
+	}
+
+	header .mobile {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	header img {
+	  margin: 0 2rem;
+	}
+}
+
+/* Learn More Styles */
+
+#learn-more-section {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#learn-more-cta {
+	position: relative;
+  top: 10rem;
+  left: 3%;
+  padding: 0 2rem;
+}
+
+#learn-more-cta .content {
+  display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: #fff;
+}
+
+#learn-more-cta h1 {
+	margin: 0;
+	font-size: 3.157rem;
+}
+
+#learn-more-cta span {
+	margin-top: 0.5rem;
+}
+
+#learn-more-cta .button {
+	margin-top: 2rem;
+	width: 200px;
+	color: #fff;
+}
+
+#learn-more-cta .button:hover {
+  background-color: #eda309;
+	color: #fff;
+}
+
+/* Only Mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	#learn-more-section {
+	  justify-content: center;
+	}
+
+	#learn-more-cta {
+		position: static;
+    width: auto;
+    height: auto;
+	  padding: 0;
+		text-align: center;
+	}
+
+	#learn-more-cta .content {
+		align-items: center;
+	}
+
+	#learn-more-cta h1 {
+		font-size: 1.777rem;
+	}
+
+	#learn-more-cta .button {
+		margin-top: 1rem;
+	}
+}
+
+/* Main Content Styles */
+
+main .content {
+	display: block;
+}
+
+.widget-header {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 1.5rem;
+}
+
+.widget-header h2 {
+	margin: 0;
+	font-size: 2.369rem;
+}
+
+/* Only Mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	.widget-header {
+		padding: 0 1rem 1rem 1rem;
+	}
+}
+
+/* On Campus and For Companies Section Styles */
+
+#on-campus-section,
+#for-companies-section {
+  margin: 2rem 0 0 0;
+}
+
+.info-content {
+  display: flex;
+}
+
+.info-left {
+  width: 60%;
+  padding: 0px 1.5rem;
+}
+
+.info-left .content {
+	padding: 2rem 0;
+}
+
+.info-left h3 {
+	font-size: 1.777rem;
+}
+
+.info-left span {
+	font-size: 0.75rem;
+	font-style: italic;
+}
+
+.info-left video {
+	width: 100%;
+	height: auto;
+}
+
+.info-right {
+	width:40%;
+	border-left: solid 1px #dfdce3;
+}
+
+.info-right .info-small {
+	display: flex;
+	margin: 0 0 1.5rem 0;
+	padding: 0 1.5rem 1.5rem 1.5rem;
+	border-bottom: solid 1px #dfdce3;
+}
+
+.info-small .image-container {
+	width: 35%;
+	padding-right: 1.5rem;
+}
+
+.info-small .content {
+	width: 65%;
+}
+
+.info-small h4 {
+	font-size: 1.333rem;
+}
+
+.info-small .read-more {
+	color: #f7b733;
+}
+
+.info-small .read-more:hover {
+	text-decoration: underline;
+}
+
+/* Only Tablets and Desktop */
+@media only screen and (min-width: 768px) {
+
+	.info-small .mobile {
+		display: none;
+	}
+}
+
+/* Only Mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	.info-content {
+	  display: block;
+	}
+
+	.info-left {
+	  width: 100%;
+	  padding: 0px 1rem;
+	}
+
+	.info-right {
+		width:100%;
+		border-left: none;
+	}
+
+	.info-right .info-small {
+		display: block;
+		margin: 0 0 1rem 0;
+		padding: 0 1rem;
+	}
+
+	.info-small .image-container {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.info-small .content {
+		width: 100%;
+		padding: 1rem 0;
+	}
+
+	.info-small .desktop {
+		display: none;
+	}
+
+	/* Only For Companies Section */
+
+	#for-companies-section .info-right {
+		display: none;
+	}
+}
+
+/* Online Learning Section Styles */
+
+#online-learning-section {
+	background-color: #2a3132;
+}
+
+#online-learning-section h2 {
+	color: #fff;
+	padding-top: 2rem;
+}
+
+.clearfix {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 4.5rem;
+}
+
+.info-course {
+	background-color: #fff;
+	width: 31.75%;
+	margin-bottom: 2rem;
+}
+
+.info-course .content {
+	padding: 1rem;
+}
+
+.info-course h4 {
+	font-size: 1.333rem;
+}
+
+.info-course .label {
+	padding: 0.5rem 0;
+	font-size: 0.625rem;
+	color: #f7b733;
+}
+
+/* Mobile and Tablet */
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+
+	.info-course .label {
+		font-size: 0.7rem;
+	}
+}
+
+/* Only Mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	.clearfix {
+		margin: 0 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.info-course {
+		width: 100%;
+	}
+
+	.info-course .image-container {
+		display: none;
+	}
+
+	.info-course h4 {
+		padding-bottom: 0;
+	}
+
+	.info-course span {
+		display: none;
+	}
+
+	.info-course p {
+		display: none;
+	}
+}
+
+/* Footer */
+
+footer {
+  background-color: #f7b733;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: .75rem;
+	align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+}
+
+footer nav li {
+  padding-left: 1.5rem;
+}
+
+footer li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
